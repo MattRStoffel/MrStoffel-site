@@ -1,0 +1,16 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<MainLayout {title}>
+  <div class="panel-content-wrapper">
+    <h1>{title}</h1>
+    <slot />
+  </div>
+</MainLayout>

@@ -1,0 +1,114 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+
+type Post = {
+  title: string;
+  subtitle: string;
+  pageUrl: string;
+};
+
+const projects: Array<Post> = [
+  {
+    title: 'My Journey',
+    subtitle: 'How I learned to code',
+    pageUrl: '/learn-2-code',
+  },
+];
+---
+
+<MainLayout>
+  <div class="panel-content-wrapper">
+    <h1 class="catchy-oneliner">Im a computer scientist.</h1>
+    <p>
+      Hey, I'm Matt. I build things. Sometimes for work, sometimes for fun, but
+      mostly because I love to make computers do my bidding.
+    </p>
+    <p>
+      I’ve got some apps on the Apple App Store, worked as a freelancer, and
+      spent time managing Linux and Solaris servers back in my Navy days. These
+      days, I prefer to break things in my homelab, experimenting with
+      Kubernetes and Docker. I push straigt to prod without worry because the
+      only preson suffering from my bad desisions is myself.
+    </p>
+  </div>
+
+  <hr />
+
+  <section id="projects" class="panel-content-wrapper">
+    <h2 class="project-title">My projects</h2>
+
+    <div class="project-grid">
+      {
+        projects.map((member) => (
+          <a href={member.pageUrl}>
+            <div class="project-card">
+              <div class="project-info">
+                <h3 class="project-name">{member.title}</h3>
+                <p class="project-role">{member.subtitle}</p>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="contact" class="panel-content-wrapper">
+    <div class="contact-panel">
+      <h2>Contact Me</h2>
+      <p>Have a question or want to learn more about how I get things done?</p>
+      <p>
+        Reach out to me at:
+        <a href="mailto:info@mrstoffel.com">info@mrstoffel.com</a>
+      </p>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .catchy-oneliner {
+    margin-top: 0em;
+    font-size: 3em;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10em;
+  }
+
+  .project-info {
+    padding: 1em;
+    text-align: center;
+    background-color: #323252;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-name {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .project-role {
+    font-size: 1em;
+    color: #888888;
+  }
+</style>

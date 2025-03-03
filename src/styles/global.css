@@ -1,0 +1,45 @@
+html {
+  color: #C0D0FF;
+  background-color: #252730;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  color: #70C0C0;
+}
+
+h2 {
+  color: #70C0C0;
+  font-size: 2em;
+}
+
+a {
+  color: #70C0C0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  color: #ffffff;
+  width: 100%;
+  margin: 3em 0em;
+}
+
+.panel-content-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-left: 2em;
+  margin-right: 2em;
+}

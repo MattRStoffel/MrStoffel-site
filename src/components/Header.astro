@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="panel-content-wrapper">
+  <nav class="navigation">
+    <div class="links">
+      <div class="home-button">
+        <a href="/">MrStoffel</a>
+      </div>
+    </div>
+    <div>
+      <a class="" href="https://github.com/MattRStoffel">
+        <Icon class="github-icon" name="mdi:github" />
+      </a>
+    </div>
+  </nav>
+</div>
+
+<style>
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0em 1em 0em;
+  }
+
+  .links {
+    display: flex;
+    gap: 5em;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .other-link:hover {
+    color: #f37125ee;
+  }
+
+  .home-button {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .github-icon {
+    font-size: 2em;
+    color: #888888;
+  }
+</style>
