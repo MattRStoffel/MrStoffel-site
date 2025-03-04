@@ -1,13 +1,22 @@
 ---
 import { getCollection } from 'astro:content';
+import MainLayout from '@layouts/MainLayout.astro';
 const posts = await getCollection('blog');
 ---
 
-<ul>
-  {posts.map((post) => (
-    <li>
-      <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-    </li>
-  ))}
-</ul>
-
+<MainLayout>
+  <div class="panel-content-wrapper">
+    <ul>
+      {
+        posts.map((post) => (
+          <li>
+            <a href={`/blog/${post.slug}`}>
+              {post.id.replace('.md', '').replace('-', ' ')}
+            </a>
+            <span>({post.data.date.toDateString()})</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div></MainLayout
+>

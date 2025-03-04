@@ -1,8 +1,7 @@
 ---
-title: "In the beginning there was me"
+title: "Dev matt"
 date: 2025-03-03
-description: "My journey in software development so far"
---- 
+---
 Through my life I have always had an interest in learning how to program. As a kid I started out with a book that promised to teach me to make games in Visual Basic. Beyond just copying the programs out of the book I was not ables to grasp the concepts and couldn't figure out why the syntax was so important. It seemed like some sort of sorcery that was unchangeable. My dreams of becoming a game developer died with my  inability to do much beyond making the pong clone have different assets than the supplied assets that came with the book.
 
 Later in life I still had the itch, but this was for different reasons. I wanted to make things that made my life easier. I needed a way to automate the boring stuff in my life. I needed a way to be able to do the interesting parts of my job while making the repetitive parts do themselves. I decided that I would come back and teach myself to program again but this time I had a real life application!

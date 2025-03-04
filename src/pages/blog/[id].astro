@@ -1,0 +1,30 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import MainLayout from '@layouts/MainLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { id: post.slug },
+  }));
+}
+
+const { id } = Astro.params;
+const post = await getEntry('blog', id);
+
+if (!post) {
+  throw new Error(`Post not found: ${id}`);
+}
+
+const { Content } = await render(post);
+---
+
+<MainLayout>
+  <div class="panel-content-wrapper">
+    <h1>{post.data.title}</h1>
+    <p><em>{post.data.date.toDateString()}</em></p>
+    <p>{post.data.description}</p>
+
+    <Content />
+  </div>
+</MainLayout>
