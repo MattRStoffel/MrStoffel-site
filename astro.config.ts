@@ -4,6 +4,6 @@ import icon from 'astro-icon';
 
 export default defineConfig({
   integrations: [icon()],
-  site: 'https://MattRStoffel.github.io',
+  site: 'https://MattRStoffel.com',
   base: 'MrStoffel-site',
 });
