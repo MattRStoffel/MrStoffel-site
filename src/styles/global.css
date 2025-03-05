@@ -28,7 +28,11 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.other-link:hover {
+  color: #f37125ee;
 }
 
 hr {
