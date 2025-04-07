@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import MainLayout from '@layouts/MainLayout.astro';
-const posts = await getCollection('blog');
+const posts = (await getCollection('blog')).slice().reverse();
 ---
 
 <MainLayout>
@@ -9,11 +9,11 @@ const posts = await getCollection('blog');
     <ul>
       {
         posts.map((post) => (
-          <li>
+          <li style="margin-bottom: 1rem;">
             <a href={`/blog/${post.slug}`}>
               {post.id.replace('.md', '').replace('-', ' ')}
             </a>
-            <span>({post.data.date.toDateString()})</span>
+            <span> ({post.data.date.toDateString()})</span>
           </li>
         ))
       }
