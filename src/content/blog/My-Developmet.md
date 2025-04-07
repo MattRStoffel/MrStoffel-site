@@ -2,7 +2,7 @@
 title: "Dev matt"
 date: 2025-03-03
 ---
-Through my life I have always had an interest in learning how to program. As a kid I started out with a book that promised to teach me to make games in Visual Basic. Beyond just copying the programs out of the book I was not ables to grasp the concepts and couldn't figure out why the syntax was so important. It seemed like some sort of sorcery that was unchangeable. My dreams of becoming a game developer died with my  inability to do much beyond making the pong clone have different assets than the supplied assets that came with the book.
+Through my life I have always had an interest in learning how to program. As a kid I started out with a book that promised to teach me to make games in Visual Basic. Beyond just copying the programs out of the book I was not able to grasp the concepts and couldn't figure out why the syntax was so important. It seemed like some sort of sorcery that was unchangeable. My dreams of becoming a game developer died with my inability to do much beyond making the pong clone have different assets than the supplied assets that came with the book.
 
 Later in life I still had the itch, but this was for different reasons. I wanted to make things that made my life easier. I needed a way to automate the boring stuff in my life. I needed a way to be able to do the interesting parts of my job while making the repetitive parts do themselves. I decided that I would come back and teach myself to program again but this time I had a real life application!
 
@@ -16,4 +16,4 @@ When my feelings about myself started coming back down to earth and my confidenc
 
 I decided that a formal education was the best route to go and that would give me the best foundation for this whole programming thing. I started at community college and found everything enthralling. I found something that I could do for a lifetime. For me all the subjects that weren't about computer science were turned into a lesson about computers, how I related to them and how I could use them better. If I struggled with a physics problem I would write a little physics simulation so I could understand it in my own way. If I had a math concept that I found sort of boring I would look for ways that it could help me in programming. All these things were channeled into my love for writing code.
 
-Then the gipity came out. everything turned grey and im sad now
+Then the gipity came out. everything turned gray and I'm sad now
