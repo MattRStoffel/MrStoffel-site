@@ -11,11 +11,12 @@ export const GET: APIRoute = async (context) => {
 
   const items: Array<RSSFeedItem> = [];
   for (const post of posts) {
-    const { title, date, description } = post.data;
+    const { date, description } = post.data;
+    const title = post.filePath?.split('/').pop()?.replace('.md', '') ?? post.id;
 
     items.push({
       title: title,
-      pubDate: new Date(date),
+      pubDate: date ? new Date(date) : undefined,
       description: description,
       link: `/blog/${post.id}`,
       content: sanitizeHtml(parser.render(post.body ?? ''), {
