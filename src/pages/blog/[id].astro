@@ -16,13 +16,14 @@ if (!post) {
   throw new Error(`Post not found: ${id}`);
 }
 
+const title = post.filePath?.split('/').pop()?.replace('.md', '') ?? id;
 const { Content } = await render(post);
 ---
 
-<MainLayout>
+<MainLayout {title}>
   <div class="panel-content-wrapper">
-    <h1>{post.data.title}</h1>
-    <p><em>{post.data.date.toDateString()}</em></p>
+    <h1>{title}</h1>
+    <p><em>{post.data.date ? post.data.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' }) : 'Unknown'}</em></p>
     <p>{post.data.description}</p>
 
     <Content />

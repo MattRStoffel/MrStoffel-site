@@ -2,7 +2,6 @@
 tags:
   - blog
 date: 2025-04-06
-title: SFHacks 2025
 ---
 
 I am writing this the Sunday after attending SFHacks 2025 so my apologies for the run on sentences and bad writing you are about to experience, I am not responsible for your continued participation in this exercise. 

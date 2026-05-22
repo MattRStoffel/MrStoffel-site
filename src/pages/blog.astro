@@ -1,9 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 import MainLayout from '@layouts/MainLayout.astro';
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
-);
+const posts = (await getCollection('blog')).sort((a, b) => {
+  if (!a.data.date && !b.data.date) return 0;
+  if (!a.data.date) return 1;
+  if (!b.data.date) return -1;
+  return b.data.date.getTime() - a.data.date.getTime();
+});
 ---
 
 <MainLayout>
@@ -13,9 +16,9 @@ const posts = (await getCollection('blog')).sort(
         posts.map((post) => (
           <li style="margin-bottom: 1rem;">
             <a href={`/blog/${post.id}`}>
-              {post.id.replace('.md', '').replace('-', ' ')}
+              {post.filePath?.split('/').pop()?.replace('.md', '') ?? post.id}
             </a>
-            <span> ({post.data.date.toDateString()})</span>
+            <span> ({post.data.date ? post.data.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' }) : 'Unknown'})</span>
           </li>
         ))
       }

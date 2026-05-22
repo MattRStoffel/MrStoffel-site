@@ -1,5 +1,4 @@
 ---
-title: "Dev matt"
 date: 2025-03-03
 ---
 Through my life I have always had an interest in learning how to program. As a kid I started out with a book that promised to teach me to make games in Visual Basic. Beyond just copying the programs out of the book I was not able to grasp the concepts and couldn't figure out why the syntax was so important. It seemed like some sort of sorcery that was unchangeable. My dreams of becoming a game developer died with my inability to do much beyond making the pong clone have different assets than the supplied assets that came with the book.
