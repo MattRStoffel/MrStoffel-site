@@ -19,6 +19,10 @@
           buildInputs = with pkgs; [
             nodejs_22
           ];
+          shellHook = ''
+            npm install
+            export PATH="$PWD/node_modules/.bin:$PATH"
+          '';
         };
       };
     };

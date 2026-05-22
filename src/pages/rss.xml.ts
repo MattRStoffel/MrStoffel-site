@@ -17,8 +17,8 @@ export const GET: APIRoute = async (context) => {
       title: title,
       pubDate: new Date(date),
       description: description,
-      link: `/blog/${post.slug}`,
-      content: sanitizeHtml(parser.render(post.body), {
+      link: `/blog/${post.id}`,
+      content: sanitizeHtml(parser.render(post.body ?? ''), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
       }),
       ...post.data,

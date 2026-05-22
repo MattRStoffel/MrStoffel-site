@@ -10,7 +10,7 @@ const posts = (await getCollection('blog')).slice().reverse();
       {
         posts.map((post) => (
           <li style="margin-bottom: 1rem;">
-            <a href={`/blog/${post.slug}`}>
+            <a href={`/blog/${post.id}`}>
               {post.id.replace('.md', '').replace('-', ' ')}
             </a>
             <span> ({post.data.date.toDateString()})</span>
@@ -18,6 +18,5 @@ const posts = (await getCollection('blog')).slice().reverse();
         ))
       }
     </ul>
-    <div style="width: 10000px"></div>
   </div>
 </MainLayout>

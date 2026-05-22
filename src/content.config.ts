@@ -1,11 +1,11 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-  loader: async () => {
-    const posts = await import.meta.glob("./content/blog/**/*.md");
-    return Object.keys(posts).map((id) => ({ id }));
-  },
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
+    title: z.string().optional(),
+    description: z.string().optional(),
     date: z.coerce.date(),
     tags: z.array(z.string()).default([]),
   }),
