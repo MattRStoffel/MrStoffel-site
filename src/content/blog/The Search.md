@@ -1,3 +1,9 @@
+---
+title: "The Search"
+date: 2026-05-21
+tags:
+  - blog
+---
 The grass is always greener on the other side. Why do we spend our whole lives looking to get to that other side and why can I never just be happy with the here and now. I struggle with being happy with here and now, I think, because ambition. There is always something to strive for. I see other people in much worse positions in life and I'm shook free for but a moment. I still feel stuck and incapable of changing my position and at risk of losing all that I have, constantly. I am just a contractor at some big tech company and making it feel like anything less than precarious is almost impossible.
 
 The big question I have for myself is weather that feeling will ever go away. I feel like I always find a way to blame some part of my situation, any part, on why I feel like that next thing will make my life feel stable. I have no safe harbor because I am not financially independent. If I lost my job now because of any big tech layoff I am just as adrift as any other person. I have a small runway but at my current rate I will be completely SOL in less than a year. I am stuck.
