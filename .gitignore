@@ -2,6 +2,7 @@
 dist/
 # generated types
 .astro/
+lefthook.yml
 
 # dependencies
 node_modules/
@@ -25,3 +26,5 @@ pnpm-debug.log*
 # direnv/Nix-related stuff
 .direnv/
 result
+
+.obsidian
