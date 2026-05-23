@@ -27,4 +27,5 @@ pnpm-debug.log*
 .direnv/
 result
 
-.obsidian
+**/.obsidian/
+**/.trash/
